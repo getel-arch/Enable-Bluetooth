@@ -23,7 +23,7 @@ jobs:
       run: New-Item -ItemType Directory -Path .\output
 
     - name: Compile 64bit Binary
-      run: gcc .\src\enable_bluetooth.c -o .\output\enable_bluetooth_x64.exe -s -m64 -lntdll
+      run: gcc .\src\enable_bluetooth.c -o .\output\enable_bluetooth_x64.exe -s -m64 -lbthprops
 
     - name: Read Version
       run: |
